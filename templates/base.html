@@ -1,0 +1,30 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+  {% include 'parciais/_head.html'%}
+
+  <title>Template Bootstrap</title>
+
+  
+</head>
+
+<body>
+
+  {% include 'parciais/_nav.html'%}
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          {%block conteudo%}{%endblock%}
+      </div>
+    </div>
+  </div>
+
+  {%include 'parciais/_bootstrap.html'%}
+</body>
+
+</html>
